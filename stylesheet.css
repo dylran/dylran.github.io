@@ -129,3 +129,21 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.blink {
+  color: #c00; /* red */
+  font-weight: bold;
+  text-align: center;
+  animation: fade 1.5s infinite alternate;
+  margin-top: 10px;
+}
+
+@keyframes fade {
+  from { opacity: 1; }
+  to { opacity: 0.3; }
+}
+
+
+
+
+
