@@ -66,7 +66,7 @@
             <td style="padding:10px;">
               <h2>Research</h2>
               <p>
-  My research focuses on advancing visual scene understanding through object detection, self-supervised learning, and the use of foundation models. I am particularly interested in building vision systems that generalize across tasks and environments, with an emphasis on integrating foundation models into agent-based AI for perception and decision-making.
+  My research focuses on advancing visual scene understanding through object detection, self-supervised learning, and the use of foundation models. I am particularly interested in building vision systems that generalize across tasks and environments, with an emphasis on integrating foundation models into agent-based AI for perception.
 </p>
 
             </td>
@@ -129,12 +129,12 @@
 
 
         <hr>
-
-        <h2>Selected Publications</h2>
-
-        <table style="width:100%;border-spacing:0;" cellpadding="20">
-          <!-- Example Publication -->
-        
+<h2>Publication List</h2>
+<h2 onclick="toggleSection('cvprList')" style="cursor:pointer;">CVPR</h2>
+<div id="cvprList" style="display:block;">
+  <table style="width:100%;border-spacing:0;" cellpadding="20">
+        <!-- SINR -->
+                <!-- SINR -->
         <tr onmouseout="ff7_stop()" onmouseover="ff7_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
                 <div class="one">
@@ -169,44 +169,8 @@
             </td>
             </tr>
 
-
-
-        <tr onmouseout="ff6_stop()" onmouseover="ff6_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-                <div class="one">
-                <div class="two" id='ff6_image'>
-                    <img src='images2/lvlm/headline.jpg' height="120" width="160" alt="LVLM headline">
-                </div>
-                <img src='images2/lvlm/pipeline.jpg' height="100" width="160" alt="LVLM pipeline">
-                </div>
-                <script type="text/javascript">
-                function ff6_start() {
-                    document.getElementById('ff6_image').style.opacity = "1";
-                }
-                function ff6_stop() {
-                    document.getElementById('ff6_image').style.opacity = "0";
-                }
-                ff6_stop()
-                </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-                <p>
-                <a href="https://drive.google.com/file/d/1fkpjtXnevX2CiJA6qEPNFnysLHLr7Ef5/view?usp=sharing" target="_blank">
-                    <papertitle><em>Zero-Shot Scene Understanding for Automatic Target Recognition Using Large Vision-Language Models</em></papertitle>
-                </a>
-                </p>
-                <p>
-                Authors: <strong>Yasiru Ranasinghe</strong>, Vibashan VS, James Uplinger, Celso De Melo, and Vishal M. Patel
-                </p>
-                <em>AVSS</em>, 2025 &nbsp;<br>
-                <p>
-                This work presents a robust pipeline for zero-shot automatic target recognition by combining the localization power of open-world detectors with the recognition abilities of large vision-language models (LVLMs). It evaluates multiple LVLMs on military vehicles under challenging conditions and highlights strategies for reliable recognition in novel domains.
-                </p>
-            </td>
-          </tr>
-
-
-        <tr onmouseout="ff_stop()" onmouseover="ff_start()">
+    <!-- CrowdDiff -->
+<tr onmouseout="ff_stop()" onmouseover="ff_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
               <div class="two" id='ff_image'>
@@ -238,8 +202,10 @@
               </p>
               </a></p>
             </td>
-          </tr>
+        </tr>
 
+    <!-- MonoDiff -->
+     
         <tr onmouseout="ff1_stop()" onmouseover="ff1_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -275,6 +241,162 @@
             </td>
           </tr>
 
+  </table>
+</div>
+
+<h2 onclick="toggleSection('preprintList')" style="cursor:pointer;">Preprints</h2>
+<div id="preprintList" style="display:none;">
+  <table style="width:100%;border-spacing:0;" cellpadding="20">
+    <!-- RAGCC -->
+
+            <tr onmouseout="ff8_stop()" onmouseover="ff8_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='ff8_image'>
+        <img src='images2/ragcc/results.jpg' height="120" width="160" alt="Crowd Counting Results">
+      </div>
+      <img src='images2/ragcc/pipeline.jpg' height="100" width="160" alt="Crowd Counting Pipeline">
+    </div>
+    <script type="text/javascript">
+      function ff8_start() {
+        document.getElementById('ff8_image').style.opacity = "1";
+      }
+      function ff8_stop() {
+        document.getElementById('ff8_image').style.opacity = "0";
+      }
+      ff8_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <p>
+      <a href="https://drive.google.com/file/d/1IY044fXVZC0wsONiQTgG0wFNoKPVZZz6/view?usp=sharing" target="_blank">
+        <papertitle><em>Enhancing Crowd Counting with Synthetic Retrieval</em></papertitle>
+      </a>
+    </p>
+    <p>
+      Authors: <strong>Yasiru Ranasinghe</strong>, and Vishal M. Patel
+    </p>
+    <!-- <em>Preprint</em> &nbsp;<br> -->
+    <p>
+      This paper proposes a retrieval-augmented framework for crowd counting that uses synthetic images and text descriptions to enrich visual embeddings. It introduces the use of non-parametric, text-guided knowledge during inference for improved generalization in zero-shot settings. The method achieves state-of-the-art performance on five benchmark datasets without relying on pseudo-labels or manual annotations.
+    </p>
+  </td>
+</tr>
+
+    <!-- AOD -->
+    <tr onmouseout="ff10_stop()" onmouseover="ff10_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='ff10_image'>
+        <img src='images2/aod/highlight.jpg' height="120" width="160" alt="Object Detection Highlight">
+      </div>
+      <img src='images2/aod/main.jpg' height="100" width="160" alt="Object Detection Overview">
+    </div>
+    <script type="text/javascript">
+      function ff10_start() {
+        document.getElementById('ff10_image').style.opacity = "1";
+      }
+      function ff10_stop() {
+        document.getElementById('ff10_image').style.opacity = "0";
+      }
+      ff10_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <p>
+      <a href="https://drive.google.com/file/d/1Ce2osRSTPy7PbdeI0ka1M3hP6Q6wCYl_/view?usp=sharing" target="_blank">
+        <papertitle><em>Foundation Model Synergy for Annotator-Free Object Detection</em></papertitle>
+      </a>
+    </p>
+    <p>
+      Authors: <strong>Yasiru Ranasinghe</strong>, Celso M. de Melo, and Vishal M. Patel
+    </p>
+    <p>
+      <!-- This work addresses the challenge of building object detectors that can identify both known and novel classes without relying on manual annotations. Unlike traditional detectors limited to closed-set detection, the proposed framework leverages foundational models—Segment Anything Model (SAM) and large vision-language models (VLMs)—to autonomously generate and semantically label object proposals. The pipeline supports adaptation to unknown environments and domain-specific conditions in real time. Experiments show substantial performance gains, including a 25.6% mAP improvement on both COCO and LVIS compared to GroundingDINO, demonstrating the framework's scalability and potential to eliminate annotation costs. -->
+      Proposes an annotator-free object detection framework using foundational models—SAM and vision-language models (VLMs)—to autonomously generate and label object proposals. The pipeline adapts in real time to novel and domain-specific environments, eliminating the need for manual annotations while achieving strong performance across standard benchmarks.
+    </p>
+  </td>
+</tr>
+
+
+<tr onmouseout="ff11_stop()" onmouseover="ff11_start()">
+  <td style="padding:20px;width:25%;vertical-align:middle">
+    <div class="one">
+      <div class="two" id='ff11_image'>
+        <img src='images2/ebt/main.jpg' height="120" width="160" alt="ET-Barlow Twins Results">
+      </div>
+      <img src='images2/ebt/main.jpg' height="100" width="160" alt="ET-Barlow Twins Overview">
+    </div>
+    <script type="text/javascript">
+      function ff11_start() {
+        document.getElementById('ff11_image').style.opacity = "1";
+      }
+      function ff11_stop() {
+        document.getElementById('ff11_image').style.opacity = "0";
+      }
+      ff11_stop()
+    </script>
+  </td>
+  <td style="padding:20px;width:75%;vertical-align:middle">
+    <p>
+      <a href="https://drive.google.com/file/d/10Mf_dfWq5GOg1104yxf9bIHaasLGAjgk/view?usp=sharing" target="_blank">
+        <papertitle><em>Eigen-Target Decorrelation for Robust Self-Supervised Learning</em></papertitle>
+      </a>
+    </p>
+    <p>
+      Authors: <strong>Yasiru Ranasinghe</strong> and Vishal M. Patel
+    </p>
+    <p>
+      <!-- This paper introduces ET-Barlow Twins, a self-supervised learning framework that improves upon Barlow Twins by addressing its training instabilities and overfitting risks. The method replaces the identity target with a data-driven eigen-target derived from the top-N singular vectors of the correlation matrix. A student-teacher design stabilizes optimization by using the teacher's global view statistics to guide the student's alignment via augmented views. Theoretical analysis and empirical results demonstrate tighter optimization and superior generalization, with ET-Barlow Twins outperforming Barlow Twins and other leading SSL approaches across multiple benchmarks. -->
+      Introduces ET-Barlow Twins, a self-supervised learning approach that replaces the identity target with a data-adaptive eigen-target from top-N singular vectors. A student-teacher framework ensures stable training by aligning cross-view correlations. The method improves optimization robustness and generalization over standard Barlow Twins and other SSL baselines.
+    </p>
+  </td>
+</tr>
+
+
+
+  </table>
+</div>
+
+<h2 onclick="toggleSection('confList')" style="cursor:pointer;">Conferences</h2>
+<div id="confList" style="display:none;">
+  <table style="width:100%;border-spacing:0;" cellpadding="20">
+    <!-- AVSS Paper -->
+        <tr onmouseout="ff6_stop()" onmouseover="ff6_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+                <div class="one">
+                <div class="two" id='ff6_image'>
+                    <img src='images2/lvlm/headline.jpg' height="120" width="160" alt="LVLM headline">
+                </div>
+                <img src='images2/lvlm/pipeline.jpg' height="100" width="160" alt="LVLM pipeline">
+                </div>
+                <script type="text/javascript">
+                function ff6_start() {
+                    document.getElementById('ff6_image').style.opacity = "1";
+                }
+                function ff6_stop() {
+                    document.getElementById('ff6_image').style.opacity = "0";
+                }
+                ff6_stop()
+                </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+                <p>
+                <a href="https://drive.google.com/file/d/1fkpjtXnevX2CiJA6qEPNFnysLHLr7Ef5/view?usp=sharing" target="_blank">
+                    <papertitle><em>Zero-Shot Scene Understanding for Automatic Target Recognition Using Large Vision-Language Models</em></papertitle>
+                </a>
+                </p>
+                <p>
+                Authors: <strong>Yasiru Ranasinghe</strong>, Vibashan VS, James Uplinger, Celso De Melo, and Vishal M. Patel
+                </p>
+                <em>AVSS</em>, 2025 &nbsp;<br>
+                <p>
+                This work presents a robust pipeline for zero-shot automatic target recognition by combining the localization power of open-world detectors with the recognition abilities of large vision-language models (LVLMs). It evaluates multiple LVLMs on military vehicles under challenging conditions and highlights strategies for reliable recognition in novel domains.
+                </p>
+            </td>
+          </tr>
+
+    <!-- FG Paper -->
         <tr onmouseout="ff0_stop()" onmouseover="ff0_start()">
           <td style="padding:20px;width:25%;vertical-align:middle">
             <div class="one">
@@ -310,73 +432,8 @@
             </td>
           </tr>
 
-          <tr onmouseout="ff2_stop()" onmouseover="ff2_start()">
-            <td style="padding:20px;width:25%;vertical-align:top">
-              <div class="one">
-                <div class="two" id='ff2_image'>
-                  <img src='images2/access/results.png' height="90" width="160"></div>
-                <img src='images2/access/main_figure.png' height="80" width="160">
-              </div>
-              <script type="text/javascript">
-                function ff2_start() {
-                  document.getElementById('ff2_image').style.opacity = "1";
-                }
-      
-                function ff2_stop() {
-                  document.getElementById('ff2_image').style.opacity = "0";
-                }
-                ff2_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:top">
-              	
-              	<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9686744">
-                <papertitle>Transmittance Multispectral Imaging for Reheated Coconut Oil Differentiation</a></papertitle>
-              
-                <p>Authors : <strong>DYL Ranasinghe </strong>, HK Weerasooriya, S Herath, MP Bandara Ekanayake, HMVR Herath, GMRI Godaliyadda, and Terrence Madhujith</p> 
-              <em>IEEE Access</em>, 2022 &nbsp <br>
-               
-                <p>The article process a novel non invasive method for food quality analysis, specifically in terms of adulteration, using multispectral images and statistical signal processing and image processing. The proposed method yielded statistically significant results and with significant practical implications.</p>
-                <p></p>
-                </a></p>
-              </td>
-            </tr>
-
-        <tr onmouseout="ff5_stop()" onmouseover="ff5_start()">
-          <td style="padding:20px;width:25%;vertical-align:top">
-            <div class="one">
-              <div class="two" id='ff5_image'>
-                <img src='images2/jstars/algorithm.png' height="180" width="160"></div>
-              <img src='images2/jstars/main_figure.png' height="100" width="160">
-            </div>
-            <script type="text/javascript">
-              function ff5_start() {
-                document.getElementById('ff5_image').style.opacity = "1";
-              }
-    
-              function ff5_stop() {
-                document.getElementById('ff5_image').style.opacity = "0";
-              }
-              ff5_stop()
-            </script>
-          </td>
-          <td style="padding:20px;width:75%;vertical-align:top">
-            
-              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9609564">
-              <papertitle>Constrained Nonnegative Matrix Factorization for Blind Hyperspectral Unmixing Incorporating Endmember Independence</a></papertitle>
-            
-              <p>Authors : EMMB Ekanayake, HMHK Weerasooriya, <strong>DYL Ranasinghe </strong>, S Herath, B Rathnayake, GMRI Godaliyadda, MPB Ekanayake, and HMVR Herath</p> 
-            <em>IEEE Journal of Seleted Topics in Applied Earth Observation and Remote Sensing</em>, 2021 &nbsp <br>
-             
-              <p>
-              The paper proposes a novel algorithm to extract endmembers and abundances of hyperspectral remote sensing data. We introduced a regularizer for the nonnegative matrix factorization which improves independence of endmember statistics. The algorithm illustrated superior performance interms of endmber extraction from hyperspectral data.
-              </p>
-              <p></p>
-              </a></p>
-            </td>
-          </tr>
-          
-	      <tr onmouseout="ff3_stop()" onmouseover="ff3_start()">
+          <!-- ICIIS 2020 -->
+	    <tr onmouseout="ff3_stop()" onmouseover="ff3_start()">
           <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
               <div class="two" id='ff3_image'>
@@ -409,7 +466,8 @@
               </a></p>
             </td>
           </tr>
-          
+        
+        <!-- ICIIS 2019 -->
         <tr onmouseout="ff4_stop()" onmouseover="ff4_start()">
           <td style="padding:20px;width:25%;vertical-align:top">
             <div class="one">
@@ -443,7 +501,92 @@
               </a></p>
             </td>
           </tr>
-        </table>
+
+  </table>
+</div>
+
+<h2 onclick="toggleSection('journalList')" style="cursor:pointer;">Journals</h2>
+<div id="journalList" style="display:none;">
+  <table style="width:100%;border-spacing:0;" cellpadding="20">
+    <!-- IEEE Access -->
+        <tr onmouseout="ff2_stop()" onmouseover="ff2_start()">
+            <td style="padding:20px;width:25%;vertical-align:top">
+              <div class="one">
+                <div class="two" id='ff2_image'>
+                  <img src='images2/access/results.png' height="90" width="160"></div>
+                <img src='images2/access/main_figure.png' height="80" width="160">
+              </div>
+              <script type="text/javascript">
+                function ff2_start() {
+                  document.getElementById('ff2_image').style.opacity = "1";
+                }
+      
+                function ff2_stop() {
+                  document.getElementById('ff2_image').style.opacity = "0";
+                }
+                ff2_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:top">
+              	
+              	<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9686744">
+                <papertitle>Transmittance Multispectral Imaging for Reheated Coconut Oil Differentiation</a></papertitle>
+              
+                <p>Authors : <strong>DYL Ranasinghe </strong>, HK Weerasooriya, S Herath, MP Bandara Ekanayake, HMVR Herath, GMRI Godaliyadda, and Terrence Madhujith</p> 
+              <em>IEEE Access</em>, 2022 &nbsp <br>
+               
+                <p>The article process a novel non invasive method for food quality analysis, specifically in terms of adulteration, using multispectral images and statistical signal processing and image processing. The proposed method yielded statistically significant results and with significant practical implications.</p>
+                <p></p>
+                </a></p>
+              </td>
+            </tr>
+     
+
+    <!-- IEEE JSTARS -->
+        <tr onmouseout="ff5_stop()" onmouseover="ff5_start()">
+          <td style="padding:20px;width:25%;vertical-align:top">
+            <div class="one">
+              <div class="two" id='ff5_image'>
+                <img src='images2/jstars/algorithm.png' height="180" width="160"></div>
+              <img src='images2/jstars/main_figure.png' height="100" width="160">
+            </div>
+            <script type="text/javascript">
+              function ff5_start() {
+                document.getElementById('ff5_image').style.opacity = "1";
+              }
+    
+              function ff5_stop() {
+                document.getElementById('ff5_image').style.opacity = "0";
+              }
+              ff5_stop()
+            </script>
+          </td>
+          <td style="padding:20px;width:75%;vertical-align:top">
+            
+              <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9609564">
+              <papertitle>Constrained Nonnegative Matrix Factorization for Blind Hyperspectral Unmixing Incorporating Endmember Independence</a></papertitle>
+            
+              <p>Authors : EMMB Ekanayake, HMHK Weerasooriya, <strong>DYL Ranasinghe </strong>, S Herath, B Rathnayake, GMRI Godaliyadda, MPB Ekanayake, and HMVR Herath</p> 
+            <em>IEEE Journal of Seleted Topics in Applied Earth Observation and Remote Sensing</em>, 2021 &nbsp <br>
+             
+              <p>
+              The paper proposes a novel algorithm to extract endmembers and abundances of hyperspectral remote sensing data. We introduced a regularizer for the nonnegative matrix factorization which improves independence of endmember statistics. The algorithm illustrated superior performance interms of endmber extraction from hyperspectral data.
+              </p>
+              <p></p>
+              </a></p>
+            </td>
+          </tr>
+     
+  </table>
+</div>
+
+<script>
+  function toggleSection(id) {
+    const section = document.getElementById(id);
+    section.style.display = section.style.display === "block" ? "none" : "block";
+  }
+</script>
+
 
         <hr>
         <p style="text-align:right;font-size:small;">
